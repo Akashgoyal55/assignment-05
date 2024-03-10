@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME</title>
+    <title>THIS IS MY FIRST WEBSITE</title>
+    <style>
+        .boundary {
+            fill: none;
+            stroke: black;
+            stroke-width: 4;
+        }
+
+        .ball {
+            fill: rgb(237, 41, 41);
+        }
+    </style>
 </head>
 <body>
-    <h1>MY FIRST WEBSITE</h1>
-    
+    <!-- Custom Banner Image using SVG -->
+    <svg width="100%" height="300">
+        <!-- Your SVG elements (circle, rect, polygon) go here -->
+        <circle cx="50" cy="50" r="40" fill="red" />
+        <rect x="120" y="10" width="80" height="80" fill="green" />
+        <polygon points="250,10 300,80 200,80" fill="blue" />
+
+        <!-- SVG Animation for the orange ball -->
+        <circle cx="1" cy="1" r="10" class="ball">
+            <animateMotion
+                dur="10s"
+                repeatCount="indefinite"
+                keyPoints="0;1;0"
+                keyTimes="0;0.5;1"
+                calcMode="linear"
+            >
+                <mpath href="#motionPath"/>
+            </animateMotion>
+        </circle>
+
+        <!-- Black rectangle boundary -->
+        <rect x="10" y="10" width="380" height="280" class="boundary"/>
+        <path id="motionPath" d="M10 10 H390 V290 H10 Z" fill="none" stroke="none"/>
+    </svg>
+
+    <!-- Navigation Bar -->
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./views/two.html">Page Two</a></li>
+            <li><a href="./views/three.html">Page Three</a></li>
+        </ul>
+    </nav>
+
+    <!-- Heading Level 1 -->
+    <h1>ASSIGNMENT-05</h1>
+
+    <!-- Heading Level 2 with class "css-question" -->
+    <h2 class="css-question">How to Apply CSS to HTML</h2>
+
+    <!-- Paragraph with class "css-question" -->
+    <p class="css-question">
+        How to include an external CSS file in an HTML file with an example.
+    </p>
+
+    <!-- Heading Level 2 with class "js-question" -->
+    <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
+
+    <!-- Paragraph with class "js-question" -->
+    <p class="js-question">
+        How to link to an external JavaScript file with an example.
+        How to write JavaScript code within an HTML file with an example.
+    </p>
+
+    <!-- Wrap code examples in <code> or <pre> elements -->
+    <code>
+        /* Your CSS code example goes here */
+    </code>
+
+    <pre>
+        // Your JavaScript code example goes here
+    </pre>
 </body>
 </html>
