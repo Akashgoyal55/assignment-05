@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Three</title>
+    <title>SVG Animation Example</title>
     <link rel="icon" href="resources/favicon.svg" type="image/svg+xml">
-
 </head>
 <body>
-    <!-- Custom Banner Image -->
-    <img src="./resources/page-three.svg" alt="SVG Animation">
+    <!-- Custom Banner Image using SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300">
+        <!-- Your SVG elements for the banner image -->
+        <rect x="0" y="0" width="100%" height="300" fill="skyblue" />
+        <circle cx="50" cy="50" r="40" fill="yellow" />
+        <rect x="150" y="50" width="100" height="100" fill="orange" />
+        <polygon points="300,150 350,250 250,250" fill="green" />
+    </svg>
 
     <!-- Navigation Bar -->
     <nav class="menu">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="./two.html">Page Two</a></li>
-            <li><a href="./views/three.html">Page Three</a></li>
+            <li><a href="../views/two.html">Page Two</a></li>
+            <li><a href="./three.html">Page Three</a></li>
         </ul>
     </nav>
 
     <!-- Heading Level 1 -->
     <h1>SVG Animation is Easy!</h1>
 
+    <!-- SVG Animation -->
+    <img src="resources/page-three.svg" alt="SVG Animation" />
 </body>
 </html>
+
+
 
