@@ -37,6 +37,41 @@
         How to include an external CSS file in an HTML file with an example.
     </p>
 
+    <!-- Wrap CSS code example in <code> or <pre> elements -->
+    <pre class="css-question">
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: darkblue;
+}
+nav.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.menu ul li {
+    float: left;
+}
+nav.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav.menu ul li a:hover {
+    background-color: #111;
+}
+    </pre>
+
     <!-- Heading Level 2 with class "js-question" -->
     <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
 
@@ -46,13 +81,15 @@
         How to write JavaScript code within an HTML file with an example.
     </p>
 
-    <!-- Wrap code examples in <code> or <pre> elements -->
-    <code>
-        /* CSS code example goes here */
-    </code>
-
-    <pre>
-        //JavaScript code example goes here
+    <!-- Wrap JavaScript code example in <code> or <pre> elements -->
+    <pre class="js-question">
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    alert('Hello, World!');
+});
     </pre>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
